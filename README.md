@@ -38,8 +38,7 @@ CoffeeProject/
 └── README.md
 
 How to Run Locally
-1. Clone the repository:
-<!-- link -->
+1. Clone the repository: (https://github.com/RaghadMohammedAli/coffeeroasters-LandingPage.git)
 2. Open html/index.html in your browser -- no build step or dependencies required.
 
 Sections
