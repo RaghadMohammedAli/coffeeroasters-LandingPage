@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --mainColor: #49241bd3;
+    --secondColor: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+p{
+    margin: 15px 0;
+    line-height: 30px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+}
+header h1{
+    color: var(--mainColor);
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--mainColor);
+}
+nav ul li a:hover{
+    text-shadow: 2px 3px 4px var(--mainColor);
+}
+.menu-btn{
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+}
+#hero{
+    position: relative;
+}
+#hero .image img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+#hero .image .description{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+#hero .image .description h2, #hero .image .description p{
+    color: var(--secondColor);
+}
+#hero .image .description h2{
+    font-size: 50px;
+    text-shadow: 2px 3px 3px var(--mainColor); 
+}
+#hero .image .description p{
+    font-size: 20px;
+    max-width: 600px;
+    text-shadow: 2px 3px 3px var(--mainColor);   
+}
+button{
+    border: none;
+    padding: 8px 10px;
+    border-radius: 8px;
+    color: var(--mainColor);
+    transition: 0.7s;
+}
+button a{
+    text-decoration: none;
+    color: var(--mainColor);
+}
+#hero .image .description button:hover{
+    background-color: var(--mainColor);
+}
+#hero .image .description button a:hover, #howItWorks button a{
+    color: var(--secondColor);
+}
+#collection div h2{
+    text-align: center;
+    margin: 10%;
+    font-size: 90px;
+    opacity: 8%;
+}
+#collection .lower_collection{
+    display: flex;
+    text-align: center;
+    gap: 30px;
+}
+#collection .lower_collection h3, #collection .lower_collection p,#howItWorks .numbers h4, #howItWorks .numbers p, #howItWorks h2{
+    color: var(--mainColor);
+}
+#collection .lower_collection img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+@keyframes imgSize{
+    from{
+        border-radius: 50%;
+    }
+    to{
+        border-radius: 10%;
+    }
+}
+#collection .lower_collection img:hover{
+    animation: imgSize 2s ease-out;
+    overflow: hidden;
+}
+#whyChooseUs{
+    background-color: var(--mainColor);
+    height: 450px;
+    border-radius: 20px;
+    margin-top: 10%;
+}
+#whyChooseUs .upperChDiv{
+    color: var(--secondColor);
+    text-align: center;
+    padding: 8%;
+}
+#whyChooseUs .upperChDiv h2{
+    font-size: 40px;
+}
+#whyChooseUs .lowerChooseUs{
+    display: flex;
+    gap: 30px;
+    padding: 0 5%;
+}
+#whyChooseUs .lowerChooseUs div{
+    background-color: #917974d3;
+    border-radius: 8px;
+    text-align: center;
+    padding: 3% 2%;
+    height: 250px;
+}
+#whyChooseUs .lowerChooseUs i{
+    color: var(--mainColor);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#howItWorks{
+    margin-top: 25%;
+    position: relative;
+}
+#howItWorks .numbers{
+    display: flex;
+    gap: 30px;
+}
+#howItWorks h2{
+    font-size: 20px;
+    margin-bottom: 7%;
+}
+#howItWorks .numbers div h3{
+    font-size: 70px;
+    color: #b16f31a2;
+    margin: 20px 0;
+}
+#howItWorks .numbers h4{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+#howItWorks button{
+    background-color: var(--mainColor);
+    color: var(--secondColor);
+    margin-top: 30px;
+}
+#howItWorks button:hover, footer ul li a:hover, #hero .image .description button:hover{
+    text-shadow: 2px 3px 3px var(--secondColor);
+}
+footer{
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    height: 90px;
+    padding: 5% 3%;
+    align-items: center;
+}
+footer div ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+footer div ul li a{
+    text-decoration: none;
+}
+footer div h2, footer div ul li a{
+    color: var(--secondColor);
+}
+footer .social i{
+    color: var(--secondColor);
+    font-size: 20px;
+    padding-left: 10px;
+}
+@media (max-width: 768px){
+    header{
+        position: relative;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 15px 0;
+    }
+    .menu-btn{
+    display: block;
+    }
+    /* القائمة مخفية بالبداية */
+    #navbar{
+        display: none;
+        gap: 15px;
+        width: 100%;
+        padding: 20px;
+        background-color: var(--secondColor);
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    /* لما جافاسكريبت يضيف الكلاس اكتيف بتظهر القائمة */
+    #navbar.active{
+        display: block;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    #hero .image{
+        position: relative;
+    }
+    #hero .image img{
+        min-height: 500px;
+    }
+    #hero .image .description{
+        position: absolute;
+        top: 30%;
+        left: 7%;
+        right: 7%;
+    }
+    #hero .image .description h2{
+        font-size: 38px;
+    }
+    #hero .image .description p{
+        font-size: 16px;
+        line-height: 1.7;
+    }
+    #collection div h2{
+        font-size: 50px;
+    }
+    #collection .lower_collection{
+        flex-direction: column;
+        align-items: center;
+    }
+    #collection .lower_collection div{
+        max-width: 350px;
+    }
+    #whyChooseUs{
+        height: auto;
+        padding-bottom: 30px;
+    }
+    #whyChooseUs .upperChDiv{
+        padding: 50px 20px 30px;
+    }
+    #whyChooseUs .upperChDiv h2{
+        font-size: 32px;
+    }
+    #whyChooseUs .lowerChooseUs{
+        flex-direction: column;
+        align-items: center;
+    }
+    #whyChooseUs .lowerChooseUs div{
+        width: 100%;
+        max-width: 350px;
+    }
+    #howItWorks .numbers{
+        flex-direction: column;
+    }
+    footer{
+        height: auto;
+        border-radius: 8px;
+        flex-direction: column;
+        gap: 25px;
+        padding: 40px 20px;
+        text-align: center;
+    }
+    footer div ul{
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1000px){
+    #collection .lower_collection{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #collection .lower_collection div{
+        width: 45%;
+    }
+}
