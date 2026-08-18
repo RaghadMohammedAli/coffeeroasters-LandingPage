@@ -2,7 +2,7 @@ Coffeeroasters
 A responsive landing page for a coffee subscription service, built from scratch with vanilla HTML, CSS, and JavaScript.
 
 Overview
-Coffeeroasters ia a front-end landing page for a fictional artisan coffee subscription brand. The site walks visitors through the brand's coffee collection, the value proposition, and a simple 3-step subscription process - all wrapped in a clean, warm-toned design with smooth scroll animations.
+Coffeeroasters is a front-end landing page for a fictional artisan coffee subscription brand. The site walks visitors through the brand's coffee collection, the value proposition, and a simple 3-step subscription process - all wrapped in a clean, warm-toned design with smooth scroll animations.
 
 Features
 * Fully responsive design - adapts smoothly across desktop, tablet, and mobile.
